@@ -1,18 +1,13 @@
 # SantanderCodingTest
 SantanderCodingTest
 
-Arkadiusz Durakiewicz.
-
-You should share a public repository with us, that should include a README.md file which describes how to run the application, any assumptions you have made, and
-any enhancements or changes you would make, given the time :
-
 Hello,
 
-The application is the standard ASP.NET Core 6 application. 
-Use to downaload the source : git clone https://adres-repozytorium.git
-The using e.g Visual Studio 2022 open the SantanderCodingTest.sln project and run it. 
-Application has the Swagger so it easier to test it. 
+The application is a standard ASP.NET Core 6 application. To download the source code, use the command: git clone https://github.com/ArkadiusAlone/SantanderCodingTest.git 
+After that, open the SantanderCodingTest.sln project using software like Visual Studio 2022 and run it. 
+The application is equipped with Swagger, making it easier to test its functionality.
 
-If I had more time I would add more unit test, integration tests.
-The mocking of HttpClient is not fully good written I think. 
-More steps would be caching, paggination if neeeded, more performance improvments and tests. 
+If I had more time, I would focus on adding additional unit tests and integration tests. I believe the current implementation of mocking the HttpClient could be improved further. 
+Other steps for enhancement would involve implementing caching, pagination if required, addressing performance optimizations, and expanding the scope of testing.
+
+Arkadiusz Durakiewicz.
