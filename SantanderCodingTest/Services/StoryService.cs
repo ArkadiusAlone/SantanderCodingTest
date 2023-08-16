@@ -25,7 +25,7 @@ namespace SantanderCodingTest.Services
                 if (bestStoryIds is null)
                     return new List<Story>();
 
-                var storyDetailsResponse = bestStoryIds.Select(id => _httpClient.GetAsync($"/v0/item/{id}.json")).ToList();
+                var storyDetailsResponse = bestStoryIds.Select(id => _httpClient.GetAsync($"/v0/item/{id}.json"));
 
                 var bestStoriesInJson = await Task.WhenAll(storyDetailsResponse
                                                  .Where(x => x.Result.IsSuccessStatusCode)

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SantanderCodingTest.Helpers;
 using SantanderCodingTest.Services;
+using System.Xml.Linq;
 
 namespace SantanderCodingTest.Controllers
 {
@@ -17,6 +19,7 @@ namespace SantanderCodingTest.Controllers
         }
 
         [HttpGet("GetBestStories")]
+        [Throttle(Name = "GetBestStoriesThrottle", Time = 30)]
         public async Task<IActionResult> GetBestStories(int n)
         {
             try

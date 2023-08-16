@@ -12,6 +12,7 @@ Host.CreateDefaultBuilder(args)
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddMemoryCache();
 
 builder.Services.AddHttpClient<IStoryService, StoryService>(builder.Configuration.GetSection("StoryHttpClient:HttpClientName").Value, client =>
 {
